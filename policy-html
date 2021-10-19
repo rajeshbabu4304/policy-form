@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policy Checking</title>
+    <style>
+        /* .myName{
+            border-left:2px solid black;
+            color:black;
+            width: 100%;
+            position:absolute;
+            height: 270px;
+            top:0;
+            margin-left: 20%;
+            
+        } */
+        .FirstForm{
+              
+                padding:20px;
+                border:2px solid black;
+                /* position: relative; */
+                padding: 20px;
+                width: 20%;;
+        }
+        .myPolicy{
+            color:red;
+        }
+        .mybtn{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Policy checking</h1>
+        <div class='FirstForm'>   
+            <form action="#"class='ourForm'>        
+                  <h2 class='myPolicy'>Insurance Policy App</h2>
+                 Employee Name:<br>
+                <input type='text'>
+                <br>
+                <input type="radio" id="male" name="male" value="male">
+                <label>Male</label>
+                <input type="radio" id="female" name="female"value="female">
+                <label>Female</label>
+                <br>
+                <label>Date of Birth</label><br>
+                <input type='date'>
+                <br><label>Age</label><br>
+                <input type='text' class='AGE' id='Age'onchange='myFunc()'>
+                <br>
+                <input type="checkbox" value='checkbox'name='Check'/>
+                <label>I Agree</label>
+                <span class='myName' id='mySpan'></span>
+                
+                <br>
+                <button type='button' class='mybtn'id='mybtn'onclick='myFunc()'>submit</button>
+               
+            </form>
+        </div>
+        <span class='myEligible'> HELLOW</span><Br>
+    </div>
+    <script>
+                      
+               myFunc=()=>{
+                var age=document.getElementById('Age').value
+                // var x=document.getElementById('male').value
+                // var y=document.getElementById('female').value
+              
+                // var Text=document.getElementById('myEligible')
+       
+                   if((age.value>25||age.value<60))
+                   {
+                        alert('yes')
+           
+                   }
+                   else((age.value>21||age.value<71))
+                   {
+                       alert('no')
+                   }
+                //    else((age.value>1||age.value<20))
+                //    {
+                //     alert('not ok')
+                //    }
+                }
+    </script>   
+</body>
+</html>
